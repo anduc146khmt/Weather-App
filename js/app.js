@@ -2,7 +2,14 @@ const inputToggle = document.querySelector('#toggleMode');
 const weatherContent = document.querySelector('.weather__content');
 inputToggle.addEventListener('change', () => {
     document.body.classList.toggle('dark');
-    weatherContent.classList.toggle('darkWeather');
+    if(inputToggle.checked) {
+        weatherContent.classList.add('darkWeather');
+        weatherContent.classList.remove('hotWeather');
+    }
+    else {
+        weatherContent.classList.add('hotWeather');
+        weatherContent.classList.remove('darkWeather');
+    }
 });
 var weatherSearch = document.querySelector('.search');
 var weatherCity = document.querySelector('.city');
@@ -52,12 +59,14 @@ async function changeWeatherUI(dataSearch) {
             document.body.classList.remove('hot');
             weatherContent.classList.add('darkWeather');
             weatherContent.classList.remove('hotWeather');
+            inputToggle.checked = true;
         }
         else {
             document.body.classList.add('hot');
             document.body.classList.remove('dark');
             weatherContent.classList.add('hotWeather');
             weatherContent.classList.remove('darkWeather');
+            inputToggle.checked = false;
         }
     }
     else {
