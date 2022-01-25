@@ -8,7 +8,7 @@
 body {
     color: white;
     font-family: 'Recursive', sans-serif;
-    height: auto;
+    height: 100%;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("./img/hot.png") no-repeat center/cover;
 }
 body.hot {
