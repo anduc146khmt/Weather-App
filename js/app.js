@@ -14,8 +14,8 @@ var weatherVisibility = document.querySelector('.visibility p');
 var weatherWind = document.querySelector('.wind p');
 var weatherSun = document.querySelector('.sun p');
 weatherTime.innerHTML = new Date().toLocaleString('vi');
-weatherSearch.addEventListener('keypress', function(e){
-    if(e.code == 'Enter') {
+weatherSearch.addEventListener('keyup', function(e){
+    if(e.keyCode === 13) {
         let dataSearch = weatherSearch.value.trim();
         var HCM_name = ['TPHCM', 'HCM', 'Ho', 'Chi', 'Minh', 'TpHCM', 'Hcm', 'HCm', 'hcm'];
         var isHCM = HCM_name.some(function(keyname) {

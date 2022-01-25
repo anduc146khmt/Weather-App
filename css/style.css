@@ -9,14 +9,19 @@ body {
     color: white;
     font-family: 'Recursive', sans-serif;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("../img/hot.png") no-repeat center/cover;
-    padding-bottom: 30px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("../img/hot.png");
+    background-size: cover;
+    background-position: center;
 }
 body.hot {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("../img/hot.png") no-repeat center/cover;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("../img/hot.png");
+    background-size: cover;
+    background-position: center;
 }
 body.dark {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("../img/cold.png") no-repeat center/cover;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("../img/cold.png");
+    background-size: cover;
+    background-position: center;
 }
 /* HEADER */
 .weather__header {
