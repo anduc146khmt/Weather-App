@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@300;500;700&display=swap" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./day_night_toggle.css">
+</head>
+<body>
+    <div class="weather__header d-flex justify-content-between py-5 px-4">
+        <div class="header__content">Weather App</div>
+        <div class="day__night__toggle">
+            <input type="checkbox" id="toggleMode">
+            <label for="toggleMode">
+                <div id="star">
+                    <div class="star" id="star-1">★</div>
+                    <div class="star" id="star-2">★</div>
+                </div>
+                <div id="moon"></div>
+            </label>
+        </div>
+    </div>
+    <div class="weather__content">
+        <input type="text" class="search" placeholder="Search...">
+        <div class="weather__text">
+            <h2><span class="city">Ha Noi</span><span>,</span><span class="country">VN</span></h2>
+            <p class="time">12/24/2021,3:25:16 PM</p>
+            <div class="temperature">
+                <p>23<sup>o</sup>C</p>
+            </div>
+            <div class="weather__mode">
+                <h3>CLOUDS</h3>
+            </div>
+        </div>
+        <div class="weather__footer">
+            <div class="footer__item visibility">
+                <i class="fa fa-eye"></i>
+                <p>10000 (m)</p>
+            </div>
+            <div class="footer__item wind">
+                <i class="fas fa-wind"></i>
+                <p>2.35 (m/s)</p>
+            </div>
+            <div class="footer__item sun">
+                <i class="fas fa-cloud-sun"></i>
+                <p>89 (%)</p>
+            </div>
+
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
