@@ -1,5 +1,5 @@
 # Weather App
-A Weather Tracking App to help you view weather data in some countries around the world. 
+A Weather Tracking App to help you track weather data in some countries around the world. 
 <br/>
 API call from : https://openweathermap.org/api
 <br/>
